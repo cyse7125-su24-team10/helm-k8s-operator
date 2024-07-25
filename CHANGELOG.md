@@ -1,3 +1,10 @@
+## [1.0.1](https://github.com/cyse7125-su24-team10/helm-k8s-operator/compare/v1.0.0...v1.0.1) (2024-07-25)
+
+
+### Bug Fixes
+
+* jenkinsfile ([c07b9d6](https://github.com/cyse7125-su24-team10/helm-k8s-operator/commit/c07b9d68b9e8fc5853198f3cc998ad1364b27149))
+
 # 1.0.0 (2024-07-25)
 
 
