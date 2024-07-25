@@ -19,13 +19,13 @@ pipeline {
                 withCredentials([usernamePassword(credentialsId: 'github-pat', usernameVariable: 'GITHUB_USERNAME', passwordVariable: 'GITHUB_TOKEN')]) {
                     script {
                         sh "npm ci"
-                        sh "npm install @semantic-release/changelog"
-                        sh "npm install @semantic-release/git"
-                        sh "npm install @semantic-release/github@10.1.1"
-                        sh "npm install @semantic-release/commmit-analyzer"
-                        sh "npm install @semantic-release/release-notes-generator"
-                        sh "npm install semantic-release-helm"
-                        sh "npm install @semantic-release/npm"
+                        // sh "npm install @semantic-release/changelog"
+                        // sh "npm install @semantic-release/git"
+                        // sh "npm install @semantic-release/github@10.1.1"
+                        // sh "npm install @semantic-release/commit-analyzer"
+                        // sh "npm install @semantic-release/release-notes-generator"
+                        // sh "npm install semantic-release-helm"
+                        // sh "npm install @semantic-release/npm"
                         sh "npx semantic-release"
                     }
                 }
