@@ -1,0 +1,38 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: {{ include "cve-operator.fullname" . }}
+spec:
+  replicas: {{ .Values.replicaCount }}
+  selector:
+    matchLabels:
+      app: {{ include "cve-operator.fullname" . }} # Ensure this matches the template metadata labels
+  template:
+    metadata:
+      labels:
+        app: {{ include "cve-operator.fullname" . }} # Labels to match the selector
+    spec:
+      serviceAccountName: {{ .Values.serviceAccountName}}
+      affinity:
+        podAntiAffinity:
+          requiredDuringSchedulingIgnoredDuringExecution:
+          - labelSelector:
+              matchExpressions:
+              - key: app
+                operator: In
+                values:
+                - {{ .Values.affinitylabel }}
+            topologyKey: topology.kubernetes.io/zone
+      containers:
+        - name: {{ .Values.container.name }}
+          image: "{{ .Values.image.repository }}:{{ .Values.image.tag | default .Chart.AppVersion }}"
+          resources:
+            limits:
+              cpu: {{ .Values.resources.limits.cpu }}
+              memory: {{ .Values.resources.limits.memory }}
+            requests:
+              cpu: {{ .Values.resources.requests.cpu }}
+              memory: {{ .Values.resources.requests.memory }}
+          imagePullPolicy: {{ .Values.image.pullPolicy }}      
+      imagePullSecrets:
+        - name: docker-hub-pat
