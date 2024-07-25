@@ -1,3 +1,10 @@
+## [1.0.2](https://github.com/cyse7125-su24-team10/helm-k8s-operator/compare/v1.0.1...v1.0.2) (2024-07-25)
+
+
+### Bug Fixes
+
+* removed secrets ([7480cef](https://github.com/cyse7125-su24-team10/helm-k8s-operator/commit/7480cefa2ee0e95706a3771ebbd9eacbe551155a))
+
 ## [1.0.1](https://github.com/cyse7125-su24-team10/helm-k8s-operator/compare/v1.0.0...v1.0.1) (2024-07-25)
 
 
