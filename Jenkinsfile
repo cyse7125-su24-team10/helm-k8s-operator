@@ -3,7 +3,7 @@ pipeline {
     stages {
         stage('Clone') {
             steps {
-                git credentialsId: 'github-pat', branch: 'main', url: 'https://github.com/cyse7125-su24-team10/helm-webapp-cve-processor.git'
+                git credentialsId: 'github-pat', branch: 'main', url: 'https://github.com/cyse7125-su24-team10/helm-k8s-operator.git'
             }
         }
         stage('helm lint') {
