@@ -1,0 +1,11 @@
+apiVersion: rbac.authorization.k8s.io/v1
+kind: ClusterRole
+metadata:
+  name: githubreleasesmonitor-viewer
+rules:
+- apiGroups: ["cve-release.skynetx.me"]
+  resources: ["githubreleasesmonitors", "githubreleases"]
+  verbs: ["get", "list", "watch", "create"]
+- apiGroups: ["cve-release.skynetx.me"]
+  resources: ["githubreleasesmonitors/status"]
+  verbs: ["get", "update"]
