@@ -4,6 +4,9 @@ kind: CustomResourceDefinition
 metadata:
   annotations:
     controller-gen.kubebuilder.io/version: v0.15.0
+    sidecar.istio.io/logLevel: debug
+    sidecar.istio.io/componentLogLevel: "ext_authz:debug,filter:debug"
+    proxy.istio.io/config: '{"holdApplicationUntilProxyStarts": true}'
   name: githubreleases.cve-release.skynetx.me
 spec:
   group: cve-release.skynetx.me

@@ -7,7 +7,7 @@ metadata:
   name: githubreleasesmonitor-sample
 spec:
   url: "https://github.com/CVEProject/cvelistV5/releases"
-  monitorfrom: "2024-07-21"
+  monitorfrom: "2024-07-24"
   dockersecret: "docker-hub-pat"
   kafkauser: "user1"
   kafkapassword: "lSeoHL5U6M"
