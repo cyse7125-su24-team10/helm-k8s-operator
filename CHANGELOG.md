@@ -1,3 +1,10 @@
+# [1.2.0](https://github.com/cyse7125-su24-team10/helm-k8s-operator/compare/v1.1.0...v1.2.0) (2024-08-14)
+
+
+### Features
+
+* load delta to pinecone ([6070eca](https://github.com/cyse7125-su24-team10/helm-k8s-operator/commit/6070ecab36487442b150e3f8745d25d21de5df0a))
+
 # [1.1.0](https://github.com/cyse7125-su24-team10/helm-k8s-operator/compare/v1.0.2...v1.1.0) (2024-08-14)
 
 
