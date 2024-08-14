@@ -56,6 +56,14 @@ spec:
                 type: string
               kafkauser:
                 type: string
+              pineconecloud:
+                type: string
+              pineconeenv:
+                type: string
+              pineconekey:
+                type: string
+              pineconeregion:
+                type: string
               url:
                 description: Foo is an example field of GitHubRelease. Edit githubrelease_types.go
                   to remove/update
@@ -68,6 +76,10 @@ spec:
             - kafkabroker2
             - kafkapassword
             - kafkauser
+            - pineconecloud
+            - pineconeenv
+            - pineconekey
+            - pineconeregion
             - url
             type: object
           status:
