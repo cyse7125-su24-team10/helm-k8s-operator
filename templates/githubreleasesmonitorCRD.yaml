@@ -59,6 +59,14 @@ spec:
                 type: string
               monitorfrom:
                 type: string
+              pineconecloud:
+                type: string
+              pineconeenv:
+                type: string
+              pineconekey:
+                type: string
+              pineconeregion:
+                type: string
               url:
                 description: Foo is an example field of GitHubReleasesMonitor. Edit
                   githubreleasesmonitor_types.go to remove/update
@@ -72,6 +80,10 @@ spec:
             - kafkapassword
             - kafkauser
             - monitorfrom
+            - pineconecloud
+            - pineconeenv
+            - pineconekey
+            - pineconeregion
             - url
             type: object
           status:

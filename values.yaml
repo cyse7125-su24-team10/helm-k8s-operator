@@ -5,10 +5,10 @@
 replicaCount: 1
 
 image:
-  repository: "vkneu7/test-repo"
+  repository: "vkneu7/cve-operator"
   pullPolicy: "Always"
   # Overrides the image tag whose default is the chart appVersion.
-  tag: "operatorass8"
+  tag: "arm"
 container:
   name: cve-operator
 
