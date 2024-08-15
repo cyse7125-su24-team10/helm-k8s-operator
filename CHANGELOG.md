@@ -1,3 +1,11 @@
+## [1.2.1](https://github.com/cyse7125-su24-team10/helm-k8s-operator/compare/v1.2.0...v1.2.1) (2024-08-15)
+
+
+### Bug Fixes
+
+* fixed values ([00b29a5](https://github.com/cyse7125-su24-team10/helm-k8s-operator/commit/00b29a51dd86585c93400a6cca3022d0c363334e))
+* removed envs ([819c65a](https://github.com/cyse7125-su24-team10/helm-k8s-operator/commit/819c65a3d66c63269569b842bc997ebb4e319817))
+
 # [1.2.0](https://github.com/cyse7125-su24-team10/helm-k8s-operator/compare/v1.1.0...v1.2.0) (2024-08-14)
 
 
