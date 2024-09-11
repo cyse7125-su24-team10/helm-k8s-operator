@@ -8,7 +8,7 @@ image:
   repository: "vkneu7/cve-operator"
   pullPolicy: "Always"
   # Overrides the image tag whose default is the chart appVersion.
-  tag: "arm"
+  tag: "v1.2.0"
 container:
   name: cve-operator
 
@@ -20,22 +20,7 @@ resources:
     cpu: 500m
     memory: 128Mi
 
-env:
-  # - name: DB_HOST
-  #   value: postgresql # host.docker.internal for local postgres
-  # - name: DB_USER
-  #   value: web_app
-  # - name: DB_PASSWORD
-  #   valueFrom: 
-  #     secretKeyRef:
-  #       name: db-password-secret
-  #       key: DB_PASSWORD
-  # - name: DB
-  #   value: cve
-  # - name: DB_PORT
-  #   value: "5432"
-  # - name: DB_SCHEMA
-  #   value: cve  
+env: 
   - name: dockerSecret
     value: docker-hub-pat
   - name: KAFKA_USER
@@ -58,18 +43,6 @@ secrets:
   dbPassword: "placeholder_for_db_password"
   dockerConfigJson: "placeholder_for_docker_config_json"
   kafkaPassword: "placeholder_for_kafka_password" 
-
-# networkPolicy:
-#   enabled: true
-#   namespace: cve-operator
-#   denyAll:
-#     name: cve-deny-all
-#     appLabel: cve-db
-#   postgresPolicy:
-#     name: postgres-network-policy
-#     appLabel: cve-db
-#     port: 5432
-#     fromAppLabel: cve-consumer
 
 serviceAccountName: githubreleasesmonitor-sa
 
