@@ -15,7 +15,7 @@ spec:
   kafkabroker1: "kafka-controller-1.kafka-controller-headless.kafka.svc.cluster.local:9092"
   kafkabroker2: "kafka-controller-2.kafka-controller-headless.kafka.svc.cluster.local:9092"
   image: "vkneu7/pinecone-loader:v1.0.0"
-  pineconekey: "Your-Pinecone-Project-Key"
+  pineconekey: "Your-Pinecone-api-Key"
   pineconecloud: "aws"
   pineconeenv: "cve"
   pineconeregion: "us-east-1"
